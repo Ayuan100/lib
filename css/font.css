@@ -1,0 +1,55 @@
+@import url("../log.css");
+@import url("https://fonts.googleapis.com/css?family=Great+Vibes%7CLato%3A300%2C300i%2C900&amp;subset=latin-ext&amp;ver=4.7.5");
+@import url("")
+@font-face{
+	font-family: "niuniushouji";
+	/*src: url('../fonts/X-niuniushouji.ttf');*/
+}
+
+/*responsive for small device*/
+@media screen and (max-width: 480px) {
+	body,html {
+		font-size: 8px;
+	}
+}
+/*responsive for middle device*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	body,html {
+		font-size: 10px;
+	}
+}
+/*responsive for large device*/
+@media screen and (min-width: 769px){
+	body,html {
+		font-size: 12px;
+	}
+}
+.smaller{ font-size: 0.5em; }
+.small	{ font-size: 0.8em;	}
+.normal { font-size: 1em; }
+.large 	{ font-size: 1.5em; }
+.larger	{ font-size: 2em; 	}
+.largest { font-size: 3em; 	}
+.bold	{ font-weight: bold; 	}
+.bolder { font-weight: bolder; 	}
+/*.title 	{ font-family: 'Great Vibes', 'Microsoft YaHei', 'Lato', sans-serif; }*/
+.title 	{ font-family: 'Lato', 'Microsoft YaHei', sans-serif; }
+.text 	{ font-family: 'Lato', 'Microsoft YaHei', sans-serif; }
+/*-----不同大小的标题-----*/
+.small-title {
+	font-size: 2em;
+}
+.large-title {
+	font-size: 3em;
+}
+
+.bold-text {
+	font-size: 1em;
+	font-weight: bold;
+}
+.small-text {
+	font-size: 1em;
+}
+.large-text {
+	font-size: 1.5em;
+}

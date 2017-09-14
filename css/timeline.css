@@ -1,0 +1,50 @@
+.timeline{
+	/*给圆点留出3px防止被覆盖*/
+	padding-left: 4px;
+}
+.timeline p:first-child {
+	/*title左对齐*/
+	margin-left: -5px;
+}
+/*防止margin溢出父元素*/
+.timeline:before {
+	content: '';
+	display: table;
+}
+/*ul列表*/
+.timeline ul {
+	display: block;
+	border-left: 2px solid #ccc;
+	padding: 10px;
+	margin: 0;
+	max-height: 100%;
+}
+.timeline ul li {
+	position: relative;
+	margin: 0;
+	padding: 10px 0;
+	/*去掉圆点项目符号*/
+	list-style-type: none;
+	/*时间写在li里*/
+	color: #999;
+	font-size: 1em;
+}
+.timeline ul li:before {
+	content: '';
+	/*一定要absolute才能正常显示 why?*/
+	position:absolute; 
+	left: -16px;
+	top: 3px;
+	width: 8px;
+	height: 8px;
+	border: 1px solid #ccc;
+	border-radius: 20px;
+	background-color: white;
+}
+.timeline ul li p:first-child {
+	font-weight: bold;
+}
+.timeline ul li p {
+	margin-top: 0px;
+	color: black;
+}
